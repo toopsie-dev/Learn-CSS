@@ -1,0 +1,47 @@
+:root {
+	--bg-color: #333;
+	--margin: 10px;
+	--pading: 10px;
+	--text-color: #ffffffcc;
+	--font: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+	font-family: var(--font);
+}
+
+.one {
+	padding: var(--pading);
+	margin: var(--margin);
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	border: 1px solid var(--text-color);
+	border-radius: 5px;
+}
+
+.one .child {
+	padding: var(--pading);
+}
+
+.two {
+	padding: var(--pading);
+	margin: var(--margin);
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	border: 1px solid var(--text-color);
+	border-radius: 5px;
+}
+
+.two .child {
+	padding: calc(var(--pading) + 10px);
+}
+
+button {
+	padding: var(--pading);
+	margin: var(--margin);
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	border-radius: 5px;
+	border: 1px solid var(--text-color);
+	cursor: pointer;
+}
